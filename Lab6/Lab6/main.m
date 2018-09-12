@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
         GameControler *player1 = [GameControler new];
         
         while (true) {
-            NSString *input = [InputHandler getUserInputWithLength:10 withPrompt:@"\n'roll' to roll the dice.\n'hold' to hold a dice.\n'reset' to un-hold all dice.\n'display' to show current state.\n'quit' to exit the game."];
+            NSString *input = [InputHandler getUserInputWithLength:10 withPrompt:@"\n'roll' to roll the dice.\n'hold' to hold a die or un-hold it if already held.\n'reset' to un-hold all dice.\n'display' to show current state.\n'quit' to exit the game."];
             //roll, hold, reset, display, quit
             
             if ([input isEqualToString:@"roll"]) {
