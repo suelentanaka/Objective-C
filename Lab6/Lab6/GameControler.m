@@ -67,7 +67,7 @@ Dice *die = nil;
     //check if the die is already held
     Dice *heldDie = (Dice*)[_displayDice objectAtIndex:die];
     if (heldDie.held == YES) {
-        //unhold if already holded
+        //unhold if already held
         heldDie.held = NO;
     } else {
     heldDie.held = YES;
